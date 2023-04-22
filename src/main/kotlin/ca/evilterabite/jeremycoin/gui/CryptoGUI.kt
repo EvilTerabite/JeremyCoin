@@ -27,9 +27,14 @@ class CryptoGUI(player: Player) {
         }
         //Slot 14: Sell item
         purchaseGUI.setItem(14, sellItem)
+        purchaseGUI.addSlotAction(14) {
+            //TODO: Open sell gui
+        }
         //Slot 22: Close item
         purchaseGUI.setItem(22, closeItem)
-
+        purchaseGUI.addSlotAction(22) {
+            guiHandler.closeGUI(player)
+        }
         //Fill GUI with black stained-glass panes
         purchaseGUI.filler.fill(ItemBuilder.from(Material.BLACK_STAINED_GLASS_PANE).name(Component.empty()).asGuiItem())
 

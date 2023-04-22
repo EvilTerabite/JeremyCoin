@@ -21,7 +21,7 @@ class GUIHandler {
         open(player,gui)
     }
 
-    private fun closeGUI(player: Player) {
+    fun closeGUI(player: Player) {
         if(isGuiPlayer(player)) {
             getGui(player)?.close(player)
             guiPlayers.remove(player.uniqueId)
