@@ -1,0 +1,4 @@
+name: JeremyCoin
+version: '${project.version}'
+main: ca.evilterabite.jeremycoin.JeremyCoin
+api-version: 1.19
